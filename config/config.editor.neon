@@ -1,0 +1,8 @@
+extensions:
+    editorFormControl: Wame\EditorFormControl\DI\EditorFormExtension
+
+services:
+    EditorRegister:
+        class: Wame\EditorFormControl\Registers\EditorRegister
+        setup:
+            - add(Wame\EditorFormControl\Registers\Types\CKEditorType(), 'CKEditor')
