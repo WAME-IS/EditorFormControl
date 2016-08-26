@@ -55,26 +55,27 @@ class EditorFormControl extends \Nette\Forms\Controls\TextArea
 //		
 //		return $this;
 //    }
-//    
-//    
-//    /**
-//     * Prepare input
-//     * 
-//     * @return \Nette\Utils\Html
-//     */
-//    public function getControl()
-//	{
-//		$control = parent::getControl();
-//
-//        $control->addAttributes([
-//					'type' => 'textarea',
-//					'name' => $this->getHtmlName()
-//				])
-//                ->setValue($this->getValue());
-//        
-//
-//        return $control;
-//	}
+    
+    
+    /**
+     * Prepare input
+     * 
+     * @return \Nette\Utils\Html
+     */
+    public function getControl()
+	{
+		$control = parent::getControl();
+
+        $control->addAttributes([
+					'type' => 'textarea',
+					'name' => 'text',
+                    'id' => 'editor'
+				])
+                ->setValue($this->getValue());
+        
+
+        return $control;
+	}
 
 	
 	public static function register($method = 'addEditor')

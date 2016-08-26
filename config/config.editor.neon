@@ -6,3 +6,12 @@ services:
         class: Wame\EditorFormControl\Registers\EditorRegister
         setup:
             - add(Wame\EditorFormControl\Registers\Types\CKEditorType(), 'CKEditor')
+
+
+webloader:
+    js:
+        admin:
+            files:
+                - %appDir%/../vendor/wame/EditorFormControl/assets/main.js
+            remoteFiles:
+                - //cdn.ckeditor.com/4.5.10/standard/ckeditor.js
