@@ -69,8 +69,10 @@ class EditorFormControl extends \Nette\Forms\Controls\TextArea
         $control->addAttributes([
 					'type' => 'textarea',
 					'name' => 'text',
-                    'id' => 'editor'
+//                    'class' => 'editor'
 				])
+                ->addClass('editor')
+                ->addClass('ckeditor')
                 ->setValue($this->getValue());
         
 

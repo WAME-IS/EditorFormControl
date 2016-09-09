@@ -1,3 +1,1 @@
-if($('[name=editor]').length > 0) {
-    CKEDITOR.replace( 'editor' );
-}
+CKEDITOR.replace( 'editor' );
