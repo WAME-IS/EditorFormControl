@@ -12,6 +12,9 @@ webloader:
     js:
         admin:
             files:
-#                - %appDir%/../vendor/wame/EditorFormControl/assets/main.js
+#                - %appDir%/../vendor/wame/EditorFormControl/assets/ckeditor/ckeditor.js
+                - %appDir%/../vendor/wame/EditorFormControl/assets/tinymce/tinymce.min.js
+                - %appDir%/../vendor/wame/EditorFormControl/assets/main.js
             remoteFiles:
-                - //cdn.ckeditor.com/4.5.10/standard/ckeditor.js
+#                - //cdn.ckeditor.com/4.5.10/standard/ckeditor.js
+#                - //cdn.tinymce.com/4/tinymce.min.js
