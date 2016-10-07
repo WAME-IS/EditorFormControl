@@ -5,7 +5,7 @@ $(function() {
     tinyMCE.init({
         selector: '.editor',
         menubar: false,
-        elementpath: false,
+        elementpath: true,
         theme: 'modern',
 //        skin: 'light',
 //        language : 'sk',
