@@ -1,13 +1,15 @@
 //CKEDITOR.replace( 'editor' );
 $(function() {
-    tinymce.suffix = '.min';
-    tinymce.init({
+    tinyMCE.baseURL = '/components/tinymce';
+    tinyMCE.suffix = '.min';
+    tinyMCE.init({
         selector: '.editor',
         menubar: false,
         elementpath: false,
         theme: 'modern',
-        skin: 'light',
-        language : 'sk',
+//        skin: 'light',
+//        language : 'sk',
+//        language_url: "/sk/sk.js",
         plugins: 'autoresize',
         autoresize_bottom_margin: 0,
         autoresize_max_height: 500
