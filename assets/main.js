@@ -1,4 +1,5 @@
 //CKEDITOR.replace( 'editor' );
+
 $(function() {
     tinyMCE.baseURL = '/components/tinymce';
     tinyMCE.suffix = '.min';
@@ -12,13 +13,66 @@ $(function() {
 //        language : 'sk',
 //        language_url: "/sk/sk.js",
         plugins: [
-            'autoresize code link image print preview anchor fullscreen emoticons charmap searchreplace visualblocks media table paste codesample hr pagebreak nonbreaking spellchecker template',
-            'advlist autolink lists contextmenu',
-            'colorpicker directionality importcss layer legacyoutput noneditable textcolor textpattern visualchars wordcount'
+            'autoresize code link image print preview anchor fullscreen emoticons charmap searchreplace visualblocks media table paste codesample hr pagebreak nonbreaking spellchecker template insertdatetime',
+            'advlist autolink lists contextmenu imagetools wordcount',
+            'colorpicker directionality importcss layer legacyoutput noneditable textcolor textpattern visualchars'
         ],
-        toolbar1: 'undo redo | preview paste searchreplace print | template spellchecker | code codesample visualblocks fullscreen',
-        toolbar2: 'styleselect forecolor backcolor | bold italic underline | alignleft aligncenter alignright alignjustify | nonbreaking hr pagebreak | bullist numlist | outdent indent | link anchor image imagetools media table | charmap emoticons',
+        toolbar1: 'undo redo | preview paste searchreplace print | template spellchecker insertdatetime | code codesample visualblocks fullscreen',
+        toolbar2: 'styleselect forecolor backcolor | bold italic underline | alignleft aligncenter alignright alignjustify | nonbreaking hr pagebreak | bullist numlist | outdent indent | link anchor image media table | charmap emoticons',
+        image_title: true,
+        image_caption: true,
+        imagetools_toolbar: "rotateleft rotateright | flipv fliph | editimage imageoptions",
+        code_dialog_width: 600,
+        media_live_embeds: true,
+        link_assume_external_targets: true,
+        paste_data_images: true,
+        paste_as_text: true,
+        importcss_append: true,
         autoresize_bottom_margin: 0,
-        autoresize_max_height: 500
+        autoresize_max_height: 500,
+        insertdatetime_formats: ["%d.%m.%Y, %H:%M", "%d.%m.%Y", "%H:%M:%S", "%H:%M", "%Y-%m-%d", "%I:%M:%S %p", "%D"],
+        insertdatetime_element: true,
+        nonbreaking_force_tab: true,
+        textcolor_map: [
+            "000000", "Black",
+            "993300", "Burnt orange",
+            "333300", "Dark olive",
+            "003300", "Dark green",
+            "003366", "Dark azure",
+            "000080", "Navy Blue",
+            "333399", "Indigo",
+            "333333", "Very dark gray",
+            "800000", "Maroon",
+            "FF6600", "Orange",
+            "808000", "Olive",
+            "008000", "Green",
+            "008080", "Teal",
+            "0000FF", "Blue",
+            "666699", "Grayish blue",
+            "808080", "Gray",
+            "FF0000", "Red",
+            "FF9900", "Amber",
+            "99CC00", "Yellow green",
+            "339966", "Sea green",
+            "33CCCC", "Turquoise",
+            "3366FF", "Royal blue",
+            "800080", "Purple",
+            "999999", "Medium gray",
+            "FF00FF", "Magenta",
+            "FFCC00", "Gold",
+            "FFFF00", "Yellow",
+            "00FF00", "Lime",
+            "00FFFF", "Aqua",
+            "00CCFF", "Sky blue",
+            "993366", "Red violet",
+            "FFFFFF", "White",
+            "FF99CC", "Pink",
+            "FFCC99", "Peach",
+            "FFFF99", "Light yellow",
+            "CCFFCC", "Pale green",
+            "CCFFFF", "Pale cyan",
+            "99CCFF", "Light sky blue",
+            "CC99FF", "Plum"
+        ]
     });
 });
