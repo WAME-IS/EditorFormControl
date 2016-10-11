@@ -32,7 +32,7 @@ $(function() {
         autoresize_max_height: 500,
         insertdatetime_formats: ["%d.%m.%Y, %H:%M", "%d.%m.%Y", "%H:%M:%S", "%H:%M", "%Y-%m-%d", "%I:%M:%S %p", "%D"],
         insertdatetime_element: true,
-        nonbreaking_force_tab: true,
+        nonbreaking_force_tab: false,
         textcolor_map: [
             "000000", "Black",
             "993300", "Burnt orange",
