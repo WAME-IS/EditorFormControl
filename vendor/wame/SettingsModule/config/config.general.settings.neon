@@ -1,4 +1,0 @@
-services:
-	GeneralSettings:
-		setup:
-			- addFormContainer(Wame\EditorFormControl\Vendor\Wame\SettingsModule\Forms\EditorFormContainer(), 'EditorFormContainer')

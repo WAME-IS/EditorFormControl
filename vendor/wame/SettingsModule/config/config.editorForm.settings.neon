@@ -1,0 +1,20 @@
+services:
+
+    # Settings
+    GeneralSettings:
+        setup:
+            - addFormContainer(Wame\EditorFormControl\Vendor\Wame\SettingsModule\Forms\EditorFormContainer(), 'EditorFormContainer')
+
+
+    # Form containers
+    - Wame\EditorFormControl\Vendor\Wame\SettingsModule\Forms\Containers\IEditorContainerFactory
+
+
+    # Form groups
+
+
+    # Forms
+    Admin.GeneralSettingsFormBuilder:
+        setup:
+            - add(@Wame\DynamicObject\Forms\Groups\IFormGroupFactory, FormGroup, {priority: 50})
+            - add(@Wame\EditorFormControl\Vendor\Wame\SettingsModule\Forms\Containers\IEditorContainerFactory, EditorContainer, {priority: 40})
