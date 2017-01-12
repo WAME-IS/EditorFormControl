@@ -12,6 +12,9 @@
     "require": {
         "wame/Core": "*"
     },
+    "softRequire": {
+        "wame/SettingsModule": "*"
+    },
     "autoload": {
         "classmap": [
             "."
