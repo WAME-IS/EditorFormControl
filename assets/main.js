@@ -15,7 +15,7 @@ $(function() {
         plugins: [
             'autoresize code link image print preview anchor fullscreen emoticons charmap searchreplace visualblocks media table paste codesample hr pagebreak nonbreaking spellchecker template insertdatetime',
             'advlist autolink lists contextmenu imagetools wordcount',
-            'colorpicker directionality importcss layer legacyoutput noneditable textcolor textpattern visualchars'
+            'colorpicker directionality importcss legacyoutput noneditable textcolor textpattern visualchars'
         ],
         toolbar1: 'undo redo | preview paste searchreplace print | template spellchecker insertdatetime | code codesample visualblocks fullscreen',
         toolbar2: 'styleselect forecolor backcolor | bold italic underline | alignleft aligncenter alignright alignjustify | nonbreaking hr pagebreak | bullist numlist | outdent indent | link anchor image media table | charmap emoticons',
