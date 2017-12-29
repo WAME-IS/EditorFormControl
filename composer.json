@@ -1,5 +1,5 @@
 {
-    "name": "wame/EditorFormControl",
+    "name": "wameis/EditorFormControl",
     "version": "0.0.1",
     "description": "CMS WAME admin",
     "homepage": "http://wame.sk/cms-wame-admin",
@@ -10,10 +10,10 @@
         }
     ],
     "require": {
-        "wame/Core": "*"
+        "wameis/Core": "*"
     },
     "softRequire": {
-        "wame/SettingsModule": "*"
+        "wameis/SettingsModule": "*"
     },
     "autoload": {
         "classmap": [
